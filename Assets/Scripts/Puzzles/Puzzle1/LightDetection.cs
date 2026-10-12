@@ -20,6 +20,7 @@ public class LightDetection : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         lightController = GetComponentInParent<Puzzle1>();
+        PlayerStats playerSt = GetComponent<PlayerStats>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -53,11 +54,10 @@ public class LightDetection : MonoBehaviour
 
     private void PlayerOnLight()
     {
-        Destroy(player.gameObject, 1f);
+        playerMovement.GetComponent<PlayerStats>().HealthLoss(100f);
         playerMovement.rb.constraints = RigidbodyConstraints2D.FreezeAll;
         lightController.canMove = false;
         StartCoroutine(ChangeColor());
-
     }
     //private void RaycastDetection()
     //{
