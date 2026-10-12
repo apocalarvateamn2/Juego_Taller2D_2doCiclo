@@ -2,13 +2,18 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class PlayerStats : MonoBehaviour
 {
-    private float currentHealth;
-    private float maxHealth;
+    [Header ("Health")]
+    [SerializeField] private float maxHealth;
+
+    [Header ("UI")]
     [SerializeField] private Slider lifebar;
+
+    private float currentHealth;
+    
+
 
     private void Start()
     {
@@ -43,7 +48,8 @@ public class PlayerStats : MonoBehaviour
 
     IEnumerator Die()
     {
-        gameObject.GetComponent<Movement>().rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+        gameObject.GetComponent<Movement>().FreezePlayer();
         yield return new WaitForSeconds(0.5f);
         SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
         foreach (SpriteRenderer sprite in sprites)

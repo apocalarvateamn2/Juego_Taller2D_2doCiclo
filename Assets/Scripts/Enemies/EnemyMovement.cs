@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    [Header ("Movement")]
     [SerializeField] private float speed;
-    private Transform player;
-    public Rigidbody2D rb;
-    private Vector2 movement;
+
     public EnemyColor.EmyColor color;
 
+    private Transform player;
+    private Rigidbody2D rb;
+    private Vector2 movement;
+ 
     private bool inLight = false;
     private void Awake()
     {
@@ -46,5 +49,10 @@ public class EnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position +  movement * speed * Time.deltaTime);
+    }
+
+    public void FreezeAll()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 }

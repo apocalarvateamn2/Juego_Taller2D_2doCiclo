@@ -1,26 +1,35 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using System.Collections.Generic;
 
 
 public class LightDetection : MonoBehaviour
 {
+    [Header ("Light")]
     [SerializeField] private Transform rayOrigin;
     [SerializeField] private Light2D spotLight;
-    [SerializeField] private Puzzle1 lightController;
-    [SerializeField] private Movement playerMovement;
-    [SerializeField] private LayerMask detectionLayer; 
+
+    [Header ("Detection")]
+    [SerializeField] private LayerMask detectionLayer;
+    //[SerializeField] private float rayRange = 8f;
+
+    [Header ("Settings")]
+    [SerializeField] private float colorCd = 2f;
+
     private Transform player;
-    private float rayRange = 8f;
-    private float colorCd = 2f;
+    private PlayerStats playerSt;
+    private Movement playerMovement;
+    private Puzzle1 lightController;
+ 
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        playerMovement = player.GetComponent<Movement>();
+        playerSt = player.GetComponent<PlayerStats>();
+
         lightController = GetComponentInParent<Puzzle1>();
-        PlayerStats playerSt = GetComponent<PlayerStats>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -32,21 +41,26 @@ public class LightDetection : MonoBehaviour
         }
     }
 
-    private bool DetectPlayerWithRayCast(Transform origin, Transform target, float range, LayerMask layer)
+    private bool DetectPlayerWithRayCast(Transform origin, Transform target, LayerMask layer)
     {
-        if (Vector2.Distance(origin.position, target.position) > range)
-            return false;
+        //if (Vector2.Distance(origin.position, target.position) > range)
+        //    return false;
 
         Vector2 direction = (target.position - origin.position).normalized;
+        float distance = Vector2.Distance(origin.position, target.position);
 
-        RaycastHit2D hit = Physics2D.Raycast(origin.position, direction, range, layer);
+        RaycastHit2D hit = Physics2D.Raycast(origin.position, direction, distance, layer);
 
-        return hit.collider != null && hit.collider.CompareTag("Player");
+        if(hit.collider != null)
+            return hit.collider.CompareTag("Player");
+
+        return false;
     }
+     
 
     private void RaycastDetection()
     {
-        if (DetectPlayerWithRayCast(rayOrigin, player, rayRange, detectionLayer))
+        if (DetectPlayerWithRayCast(rayOrigin, player, detectionLayer))
         {
             PlayerOnLight();
         }
@@ -54,8 +68,8 @@ public class LightDetection : MonoBehaviour
 
     private void PlayerOnLight()
     {
-        playerMovement.GetComponent<PlayerStats>().HealthLoss(100f);
-        playerMovement.rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        playerSt.HealthLoss(100f);
+        playerMovement.FreezePlayer();
         lightController.canMove = false;
         StartCoroutine(ChangeColor());
     }
@@ -77,13 +91,14 @@ public class LightDetection : MonoBehaviour
     //        }
     //    }
     //}
-    //private void OnDrawGizmos()
-    //{
-    //    if (player == null)
-    //        return;
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawLine(rayOrigin.position, player.position);
-    //}
+
+    private void OnDrawGizmos()
+    {
+        if (player == null)
+            return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(rayOrigin.position, player.position);
+    }
 
     IEnumerator ChangeColor()
     {

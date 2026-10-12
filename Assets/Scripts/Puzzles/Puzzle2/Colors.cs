@@ -2,19 +2,21 @@ using UnityEngine;
 
 public class Colors : MonoBehaviour
 {
-    public EnemyColor.EmyColor rightColor;
-    public static int contador;
+    [SerializeField] private EnemyColor.EmyColor rightColor;
+
+    public static int counter;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyMovement enemy = collision.GetComponent<EnemyMovement>();
-
-        if(enemy != null)
+        if (collision.CompareTag("Enemy"))
         {
-            if(enemy.color == rightColor)
+            if(collision.TryGetComponent(out EnemyMovement enemy))
             {
-                enemy.rb.constraints = RigidbodyConstraints2D.FreezeAll;
-                contador++;
+                if(enemy.color == rightColor)
+                {
+                    enemy.FreezeAll();
+                    counter++;
+                }
             }
         }
     }

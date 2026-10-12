@@ -4,16 +4,20 @@ using UnityEngine.UI;
 
 public class FlashLight : MonoBehaviour
 {
+    [Header ("References")]
     [SerializeField] private InputActionReference flashLight;
     [SerializeField] private GameObject lightObject;
     [SerializeField] private Transform linterna;
 
-    [Header("Charge")]
+    [Header ("Charge")]
     [SerializeField] private float maxEnergy = 150f;
     [SerializeField] private float usage = 15f;
     [SerializeField] private float recharge = 10f;
+
+    [Header ("UI")]
     [SerializeField] private Slider energyBar;
-    [SerializeField] private float currentEnergy;
+
+    private float currentEnergy;
     private bool inUse = false;
 
     private void Start()
@@ -47,14 +51,14 @@ public class FlashLight : MonoBehaviour
     }
     private void OnEnable()
     {
-        flashLight.action.performed += LightManagerInUse;
-        flashLight.action.canceled += LightManagerOffUse;
+        flashLight.action.performed += LightManagerOn;
+        flashLight.action.canceled += LightManagerOff;
     }
 
     private void OnDisable()
     {
-        flashLight.action.performed -= LightManagerInUse;
-        flashLight.action.canceled -= LightManagerOffUse;
+        flashLight.action.performed -= LightManagerOn;
+        flashLight.action.canceled -= LightManagerOff;
     }
 
     private void LightDirection()
@@ -70,12 +74,12 @@ public class FlashLight : MonoBehaviour
         linterna.rotation = Quaternion.Euler(0, 0, angle);
     }
 
-    private void LightManagerInUse(InputAction.CallbackContext context)
+    private void LightManagerOn(InputAction.CallbackContext context)
     {
         inUse = true;
     }
 
-    private void LightManagerOffUse(InputAction.CallbackContext context)
+    private void LightManagerOff(InputAction.CallbackContext context)
     {
         inUse = false;
     }

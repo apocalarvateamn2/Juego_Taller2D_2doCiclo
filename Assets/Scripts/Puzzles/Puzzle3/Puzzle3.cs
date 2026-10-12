@@ -4,24 +4,31 @@ using UnityEngine.Rendering.Universal;
 
 public class Puzzle3 : MonoBehaviour
 {
-    [Header ("Text")]
+    [Header ("UI")]
     [SerializeField] private TextMeshProUGUI enemies;
     [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private TextMeshProUGUI cd;
+    [SerializeField] private GameObject puzzleUI;
 
     [Header ("Timers")]
     [SerializeField] private float timerInZone = 3;
     [SerializeField] private float timerCd = 5;
-    private float initialTimerCd = 5;
-    private float increaseTimer = 1.5f;
+    [SerializeField] private float increaseTimer = 1.5f;
 
-    [SerializeField] private int requieredEnemies = 5;
+    [Header ("Puzzle")]
+    [SerializeField] private int requiredEnemies = 5;
     [SerializeField] private Light2D zone;
     [SerializeField] private GameObject door;
+
+    private float initialTimerCd;
     private bool isInside = false;
     private bool inCd = false;
     private Collider2D enemy;
-  
+
+    private void Awake()
+    {
+        initialTimerCd = timerCd;
+    }
 
     private void Start()
     {
@@ -56,23 +63,26 @@ public class Puzzle3 : MonoBehaviour
             }
         }
 
-        if(requieredEnemies == 0)
-        {
-            Destroy(door);
-        }
-
         UpdateText();
     }
 
     private void InZone()
     {
-        requieredEnemies--;
+        requiredEnemies--;
         Destroy(enemy.gameObject);
+
         isInside = false;
         inCd = true;
         timerCd = initialTimerCd;
 
         zone.color = Color.red;
+
+        if (requiredEnemies == 0)
+        {
+            Destroy(door);
+            puzzleUI.SetActive(false);
+        }
+
 
     }
 
@@ -114,24 +124,23 @@ public class Puzzle3 : MonoBehaviour
         string format = "{00:00}:{1:00}";
         text.SetText(string.Format(format, minutes, second));
     }
+
     private void UpdateText()
     {
+        enemies.text = requiredEnemies.ToString();
         if (inCd)
         {
-            enemies.text = requieredEnemies.ToString();
             timer.text = "";
             FormatText(timerCd, cd);
             
         }
         else if (isInside)
         {
-            enemies.text = requieredEnemies.ToString();
             cd.text = "";
             FormatText(timerInZone, timer);
         }
         else
         {
-            enemies.text = requieredEnemies.ToString();
             timer.text = "";
             cd.text = "";
         }
