@@ -6,6 +6,7 @@ public class Puzzle3 : MonoBehaviour
 {
     [Header ("Text")]
     [SerializeField] private TextMeshProUGUI enemies;
+    [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private TextMeshProUGUI cd;
 
     [Header ("Timers")]
@@ -105,21 +106,33 @@ public class Puzzle3 : MonoBehaviour
         }
     }
 
+    private void FormatText(float seconds, TextMeshProUGUI text)
+    {
+        int minutes = (int)seconds / 60;
+        int second = (int) seconds % 60;
+
+        string format = "{00:00}:{1:00}";
+        text.SetText(string.Format(format, minutes, second));
+    }
     private void UpdateText()
     {
         if (inCd)
         {
             enemies.text = requieredEnemies.ToString();
-            cd.text = ((int)timerCd).ToString();   
+            timer.text = "";
+            FormatText(timerCd, cd);
+            
         }
         else if (isInside)
         {
-            enemies.text = ((int)timerInZone).ToString();
+            enemies.text = requieredEnemies.ToString();
             cd.text = "";
+            FormatText(timerInZone, timer);
         }
         else
         {
             enemies.text = requieredEnemies.ToString();
+            timer.text = "";
             cd.text = "";
         }
     }
