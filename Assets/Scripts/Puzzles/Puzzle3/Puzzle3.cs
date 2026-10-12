@@ -81,6 +81,7 @@ public class Puzzle3 : MonoBehaviour
         {
             Destroy(door);
             puzzleUI.SetActive(false);
+            zone.color = Color.green;
         }
 
 
