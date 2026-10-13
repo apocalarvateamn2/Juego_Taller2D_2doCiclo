@@ -20,6 +20,8 @@ public class FlashLight : MonoBehaviour
     private float currentEnergy;
     private bool inUse = false;
 
+    public bool IsOn => inUse && currentEnergy > 0; //esto es para que el boss sepa que esta prendida la luz
+
     private void Start()
     {
         currentEnergy = maxEnergy;
