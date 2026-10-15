@@ -50,7 +50,6 @@ public class PlayerStats : MonoBehaviour
 
     IEnumerator Die()
     {
-
         gameObject.GetComponent<Movement>().FreezePlayer();
         yield return new WaitForSeconds(0.5f);
         SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();

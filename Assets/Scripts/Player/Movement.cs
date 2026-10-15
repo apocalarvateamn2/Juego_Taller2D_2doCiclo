@@ -29,4 +29,9 @@ public class Movement : MonoBehaviour
     {
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
+
+    public void UnFreezePlayer()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
 }
