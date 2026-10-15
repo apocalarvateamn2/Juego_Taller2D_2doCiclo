@@ -15,7 +15,7 @@ public class FlashLight : MonoBehaviour
     [SerializeField] private float recharge = 10f;
 
     [Header ("UI")]
-    [SerializeField] private Slider energyBar;
+    [SerializeField] private Image energyBar;
 
     private float currentEnergy;
     private bool inUse = false;
@@ -31,8 +31,6 @@ public class FlashLight : MonoBehaviour
     {
         LightDirection();
 
-        energyBar.value = currentEnergy;
-
         if (inUse && currentEnergy > 0)
         {
             currentEnergy -= usage * Time.deltaTime;
@@ -41,7 +39,12 @@ public class FlashLight : MonoBehaviour
         else
         {
             lightObject.SetActive(false);
-            currentEnergy += recharge * Time.deltaTime;
+
+            if (!inUse)
+            {
+                currentEnergy += recharge * Time.deltaTime;
+            }
+           
         }
 
         currentEnergy = Mathf.Clamp(currentEnergy, 0, maxEnergy);
@@ -50,6 +53,9 @@ public class FlashLight : MonoBehaviour
         {
             lightObject.SetActive(false);
         }
+
+        float fillAmount = currentEnergy / maxEnergy;
+        energyBar.fillAmount = Mathf.Lerp(energyBar.fillAmount, fillAmount, Time.deltaTime * 2.5f);
     }
     private void OnEnable()
     {

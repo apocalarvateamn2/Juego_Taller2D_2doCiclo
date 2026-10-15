@@ -9,7 +9,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private float maxHealth;
 
     [Header ("UI")]
-    [SerializeField] private Slider lifebar;
+    [SerializeField] private Image lifebar;
 
     private float currentHealth;
     
@@ -23,7 +23,9 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        lifebar.value = currentHealth;
+        float targetFill = currentHealth / maxHealth;
+        lifebar.fillAmount = Mathf.Lerp(lifebar.fillAmount, targetFill, Time.deltaTime * 5);
+
     }
 
     public void HealthLoss (float damage)
