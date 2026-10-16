@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/New Scene.unity
     guid: cdbc21f77fe12f2479ff1ae91c3641c2
   - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 0d6877989f7290840a521530c97c6992
+  - enabled: 1
+    path: Assets/Scenes/Defeat.unity
+    guid: c38e6c9d95a324d4c8e5827b1d91806f
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: a15045d696e425a438780f5a204b3d9a
   - enabled: 1

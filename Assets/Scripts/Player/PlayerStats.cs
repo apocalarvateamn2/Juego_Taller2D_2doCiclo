@@ -62,6 +62,6 @@ public class PlayerStats : MonoBehaviour
     
     private void Restart()
     {
-        SceneManager.LoadScene("New Scene");
+        SceneManager.LoadScene("Defeat"); //cambio de New Scene a Defeat
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public float damage;
+    public float damage; //valor publico para usarlo en cualquier objeto
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))
