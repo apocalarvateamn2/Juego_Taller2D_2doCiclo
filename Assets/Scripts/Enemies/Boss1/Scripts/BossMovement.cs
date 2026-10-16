@@ -1,5 +1,5 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossController : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class BossController : MonoBehaviour
     public float crecimiento;
     public float tamañoMaximo;
     public GameObject boomSangre;
+    public GameObject bossObject;
 
     private void Update()
     {
@@ -17,11 +18,11 @@ public class BossController : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
             transform.localScale += new Vector3(crecimiento, crecimiento, 0f);
 
             if (transform.localScale.x >= tamañoMaximo)
@@ -33,6 +34,11 @@ public class BossController : MonoBehaviour
     private void Explotar()
     {
         Instantiate(boomSangre, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        bossObject.SetActive(false);
+        Invoke("Win", 1f);
+    }
+    private void Win()
+    {
+        SceneManager.LoadScene("Victory");
     }
 }
