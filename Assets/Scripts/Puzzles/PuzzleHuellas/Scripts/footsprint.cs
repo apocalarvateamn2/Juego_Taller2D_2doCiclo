@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class footsprint : MonoBehaviour
 {
-    SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     void Start()
     {

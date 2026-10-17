@@ -1,13 +1,15 @@
 using UnityEngine;
 using Unity.Cinemachine;
 using UnityEngine.Rendering.Universal;
-public class cameraNivelHuellas : MonoBehaviour
+public class cameraFootsprint : MonoBehaviour
 {
-    public CinemachineCamera camaraPequeña;
-    public Light2D luzGlobal;
+    [Header ("References")]
+    [SerializeField] private CinemachineCamera camaraPequeña;
+    [SerializeField] private Light2D luzGlobal;
 
-    public float intensidadNormal = 1f;
-    public float intensidadOscura = 0.3f;
+    [Header ("Camera Settings")]
+    [SerializeField] private float intensidadNormal = 1f;
+    [SerializeField] private float intensidadOscura = 0.3f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

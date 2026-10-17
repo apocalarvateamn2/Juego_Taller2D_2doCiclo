@@ -1,19 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PausaManager : MonoBehaviour
+public class PauseManager : MonoBehaviour
 {
-    public GameObject panelPausa;
+    [SerializeField] private GameObject panelPause;
 
     public void PauseGame()
     {
-        panelPausa.SetActive(true);
+        panelPause.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void ResumeGame()
     {
-        panelPausa.SetActive(false);
+        panelPause.SetActive(false);
         Time.timeScale = 1f;
     }
     public void Menu()
