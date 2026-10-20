@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: a17247947acc7a145a63c41dd5b7a99b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1026148952653711211
+    second: Mujer Enemigo-Sheet_0
+  - first:
+      213: 138409389312718088
+    second: Mujer Enemigo-Sheet_1
+  - first:
+      213: -8719821345398698492
+    second: Mujer Enemigo-Sheet_2
+  - first:
+      213: -4001624733828339591
+    second: Mujer Enemigo-Sheet_3
+  - first:
+      213: -5266442375332802624
+    second: Mujer Enemigo-Sheet_4
+  - first:
+      213: 779613873303118403
+    second: Mujer Enemigo-Sheet_5
+  - first:
+      213: -8890000951239963147
+    second: Mujer Enemigo-Sheet_6
+  - first:
+      213: 2870899955963684621
+    second: Mujer Enemigo-Sheet_7
+  - first:
+      213: 5552598841309574911
+    second: Mujer Enemigo-Sheet_8
+  - first:
+      213: 5038010104235527839
+    second: Mujer Enemigo-Sheet_9
+  - first:
+      213: 8071043108860104200
+    second: Mujer Enemigo-Sheet_10
+  - first:
+      213: 6791802720630210222
+    second: Mujer Enemigo-Sheet_11
+  - first:
+      213: -1255081441383798831
+    second: Mujer Enemigo-Sheet_12
+  - first:
+      213: -1756332113326886348
+    second: Mujer Enemigo-Sheet_13
+  - first:
+      213: 8751458672800200280
+    second: Mujer Enemigo-Sheet_14
+  - first:
+      213: -1537088022265987501
+    second: Mujer Enemigo-Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 36
+        width: 38
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b674091290d9d3e00800000000000000
+      internalID: 1026148952653711211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80530933b9abbe100800000000000000
+      internalID: 138409389312718088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 37
+        width: 36
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e44aa9fa8fcf680800000000000000
+      internalID: -8719821345398698492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 6
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978aebf818f5778c0800000000000000
+      internalID: -4001624733828339591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 39
+        width: 35
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf493cff86d9e6b0800000000000000
+      internalID: -5266442375332802624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 5
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342e23cefaeb1da00800000000000000
+      internalID: 779613873303118403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 39
+        width: 35
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd05707c3f50a480800000000000000
+      internalID: -8890000951239963147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 4
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0766ec9c4c77d720800000000000000
+      internalID: 2870899955963684621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 39
+        width: 35
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6b08c2a3bce0d40800000000000000
+      internalID: 5552598841309574911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 5
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e89cd4f7b9ae540800000000000000
+      internalID: 5038010104235527839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 37
+        width: 36
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e887ef1fa120070800000000000000
+      internalID: 8071043108860104200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 6
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaef1b30794514e50800000000000000
+      internalID: 6791802720630210222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 37
+        width: 36
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7222a241e059ee0800000000000000
+      internalID: -1255081441383798831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 7
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4323a859f3140a7e0800000000000000
+      internalID: -1756332113326886348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 36
+        width: 38
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85674c2bb4d637970800000000000000
+      internalID: 8751458672800200280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 8
+        width: 87
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ef35c669a2baae0800000000000000
+      internalID: -1537088022265987501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 48
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7aa41a04678c247b9e7e7e77cdba83
+      internalID: 1382137493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mujer Enemigo-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 32
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2329cf483ed830419399020532e8024
+      internalID: 366632274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3215821f84a49e84cb18929032d63ff0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Mujer Enemigo-Sheet_0: 1026148952653711211
+      Mujer Enemigo-Sheet_1: 138409389312718088
+      Mujer Enemigo-Sheet_10: 8071043108860104200
+      Mujer Enemigo-Sheet_11: 6791802720630210222
+      Mujer Enemigo-Sheet_12: -1255081441383798831
+      Mujer Enemigo-Sheet_13: -1756332113326886348
+      Mujer Enemigo-Sheet_14: 8751458672800200280
+      Mujer Enemigo-Sheet_15: -1537088022265987501
+      Mujer Enemigo-Sheet_16: 1382137493
+      Mujer Enemigo-Sheet_17: 366632274
+      Mujer Enemigo-Sheet_2: -8719821345398698492
+      Mujer Enemigo-Sheet_3: -4001624733828339591
+      Mujer Enemigo-Sheet_4: -5266442375332802624
+      Mujer Enemigo-Sheet_5: 779613873303118403
+      Mujer Enemigo-Sheet_6: -8890000951239963147
+      Mujer Enemigo-Sheet_7: 2870899955963684621
+      Mujer Enemigo-Sheet_8: 5552598841309574911
+      Mujer Enemigo-Sheet_9: 5038010104235527839
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
