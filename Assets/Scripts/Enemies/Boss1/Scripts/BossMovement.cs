@@ -3,13 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class BossController : MonoBehaviour
 {
-    public Transform player;
-    public FlashLight flashLight;
-    public float speed = 3f;
-    public float crecimiento;
-    public float tamañoMaximo;
-    public GameObject boomSangre;
-    public GameObject bossObject;
+    [Header ("References")]
+    [SerializeField] private Transform player;
+    [SerializeField] private FlashLight flashLight;
+    [SerializeField] private GameObject boomSangre;
+    [SerializeField] private GameObject bossObject;
+
+    [Header ("Boss Mechanics")]
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float crecimiento;
+    [SerializeField] private float tamañoMaximo;
+
 
     private void Update()
     {
