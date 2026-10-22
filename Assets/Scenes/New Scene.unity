@@ -219,11 +219,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossController
   player: {fileID: 487974905}
   flashLight: {fileID: 136199783}
+  boomSangre: {fileID: 4348461508703848137, guid: e10f9c8bb8fda4d498baca584f50bd33, type: 3}
+  bossObject: {fileID: 10876856}
   speed: 3
   crecimiento: 0.09
   "tama\xF1oMaximo": 1.2
-  boomSangre: {fileID: 4348461508703848137, guid: e10f9c8bb8fda4d498baca584f50bd33, type: 3}
-  bossObject: {fileID: 10876856}
 --- !u!212 &10876858
 SpriteRenderer:
   serializedVersion: 2
@@ -610,7 +610,7 @@ Transform:
   m_GameObject: {fileID: 72623405}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4804134, y: 25.2, z: -10}
+  m_LocalPosition: {x: 0.77108, y: 25.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec4f6a9514fa1f4b9de983158115498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuController
-  panelPausa: {fileID: 175859844}
+  panelPause: {fileID: 0}
 --- !u!114 &175859846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40100,7 +40100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c081210ccb81204bbcbb1ca856469fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossTrigger
-  bossSprite: {fileID: 10876856}
+  bossObject: {fileID: 0}
 --- !u!60 &1518241197
 PolygonCollider2D:
   m_ObjectHideFlags: 0

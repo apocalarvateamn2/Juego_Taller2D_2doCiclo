@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4784404523819236272}
   - component: {fileID: 4549351274868528518}
   - component: {fileID: -7192324351390421629}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -181,7 +181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   speed: 3
-  rb: {fileID: 0}
   color: 2
 --- !u!114 &-7192324351390421629
 MonoBehaviour:
@@ -195,3 +194,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166a1ce3f6c523643b36a5239a6ea011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
+  damage: 0
