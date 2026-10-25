@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 1b2b76c073f03b048879b30fd7b9c863
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2456075290308068561
+    second: sprites Luz P 002_0
+  - first:
+      213: -2531034302670743422
+    second: sprites Luz P 002_1
+  - first:
+      213: 4400392931100524474
+    second: sprites Luz P 002_2
+  - first:
+      213: -7167903843129993033
+    second: sprites Luz P 002_3
+  - first:
+      213: 2469077368913785961
+    second: sprites Luz P 002_4
+  - first:
+      213: -2832000256234607242
+    second: sprites Luz P 002_5
+  - first:
+      213: -5694527674551994324
+    second: sprites Luz P 002_6
+  - first:
+      213: -8482745281936897999
+    second: sprites Luz P 002_7
+  - first:
+      213: 1538703031160080211
+    second: sprites Luz P 002_8
+  - first:
+      213: -8468751095961761967
+    second: sprites Luz P 002_9
+  - first:
+      213: 71262609652011186
+    second: sprites Luz P 002_10
+  - first:
+      213: -718987888045482886
+    second: sprites Luz P 002_11
+  - first:
+      213: -4135794739150493990
+    second: sprites Luz P 002_12
+  - first:
+      213: -7911624680041225989
+    second: sprites Luz P 002_13
+  - first:
+      213: -3705043594973717822
+    second: sprites Luz P 002_14
+  - first:
+      213: -3446788262229201834
+    second: sprites Luz P 002_15
+  - first:
+      213: 738338933115238165
+    second: sprites Luz P 002_16
+  - first:
+      213: 588240014187201944
+    second: sprites Luz P 002_17
+  - first:
+      213: -4796803185656165131
+    second: sprites Luz P 002_18
+  - first:
+      213: 3837583374730699803
+    second: sprites Luz P 002_19
+  - first:
+      213: 3130629620380924481
+    second: sprites Luz P 002_20
+  - first:
+      213: -4892124218116325757
+    second: sprites Luz P 002_21
+  - first:
+      213: 5810886479398530782
+    second: sprites Luz P 002_22
+  - first:
+      213: 1232238810587579957
+    second: sprites Luz P 002_23
+  - first:
+      213: -4080509415112017613
+    second: sprites Luz P 002_24
+  - first:
+      213: 2146361060867007714
+    second: sprites Luz P 002_25
+  - first:
+      213: -6687240266301124315
+    second: sprites Luz P 002_26
+  - first:
+      213: 4922466925150349453
+    second: sprites Luz P 002_27
+  - first:
+      213: -1238587641157055356
+    second: sprites Luz P 002_28
+  - first:
+      213: -97157603025160530
+    second: sprites Luz P 002_29
+  - first:
+      213: -1533158983629816513
+    second: sprites Luz P 002_30
+  - first:
+      213: -4503877637138487904
+    second: sprites Luz P 002_31
+  - first:
+      213: 8219983157843893114
+    second: sprites Luz P 002_32
+  - first:
+      213: 6553838997724930631
+    second: sprites Luz P 002_33
+  - first:
+      213: -1277882571458232789
+    second: sprites Luz P 002_34
+  - first:
+      213: 7351423526199412164
+    second: sprites Luz P 002_35
+  - first:
+      213: 8046718564038879959
+    second: sprites Luz P 002_36
+  - first:
+      213: 2962296938149009978
+    second: sprites Luz P 002_37
+  - first:
+      213: -8709081620296058614
+    second: sprites Luz P 002_38
+  - first:
+      213: 3661025290736543179
+    second: sprites Luz P 002_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprites Luz P 002_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d44d64b67bb51220800000000000000
+      internalID: 2456075290308068561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2885bf236b5ffdcd0800000000000000
+      internalID: -2531034302670743422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 429
+        width: 65
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 28}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abff26a7e06511d30800000000000000
+      internalID: 4400392931100524474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 433
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 28}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8541e8e6d768c90800000000000000
+      internalID: -7167903843129993033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 442
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964ff0909cce34220800000000000000
+      internalID: 2469077368913785961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_5
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 448
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d225385c6b2b8d0800000000000000
+      internalID: -2832000256234607242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 298
+        width: 85
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2872ba3049f8f0b0800000000000000
+      internalID: -5694527674551994324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_7
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 367
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138c70e0c1c374a80800000000000000
+      internalID: -8482745281936897999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_8
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 369
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3570d1321429a5510800000000000000
+      internalID: 1538703031160080211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_9
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 381
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157cff16fb3f87a80800000000000000
+      internalID: -8468751095961761967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_10
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 379
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0531647fc2df000800000000000000
+      internalID: 71262609652011186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_11
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 386
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c9d3f3354a506f0800000000000000
+      internalID: -718987888045482886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 32}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6610dd894ba96c0800000000000000
+      internalID: -4135794739150493990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 192
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 27}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0ede56543443290800000000000000
+      internalID: -7911624680041225989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_14
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca51440b7a059cc0800000000000000
+      internalID: -3705043594973717822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 192
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 30}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ca7dd565c8a20d0800000000000000
+      internalID: -3446788262229201834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 170
+        width: 68
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 31}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517bc28095b1f3a00800000000000000
+      internalID: 738338933115238165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_17
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 271
+        width: 68
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8958c402d29d92800800000000000000
+      internalID: 588240014187201944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_18
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 239
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 19, z: 2, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc808dcae45e6db0800000000000000
+      internalID: -4796803185656165131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 176
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 18, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14a4c63fb5d14530800000000000000
+      internalID: 3837583374730699803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 222
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 21}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14afe1e8d0b327b20800000000000000
+      internalID: 3130629620380924481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_21
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 176
+        width: 95
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 18, z: 7, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e371671feab1cb0800000000000000
+      internalID: -4892124218116325757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede6ba2377a64a050800000000000000
+      internalID: 5810886479398530782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536c5876baac91110800000000000000
+      internalID: 1232238810587579957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_24
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 13}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3397c917e4e1f57c0800000000000000
+      internalID: -4080509415112017613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_25
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 32
+        width: 48
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 36, z: 0, w: 5}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e465b0530869cd10800000000000000
+      internalID: 2146361060867007714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_26
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 41
+        width: 32
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 18, z: 0, w: 3}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521de6788662233a0800000000000000
+      internalID: -6687240266301124315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 7, z: 0, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88223c869d105440800000000000000
+      internalID: 4922466925150349453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c05a94a17afcee0800000000000000
+      internalID: -1238587641157055356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6f470cca3d6aef0800000000000000
+      internalID: -97157603025160530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 35, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3dbb84070029bae0800000000000000
+      internalID: -1533158983629816513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 18, z: 0, w: 3}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5e88ec6230f71c0800000000000000
+      internalID: -4503877637138487904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 19, z: 0, w: 3}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b9af6712f331270800000000000000
+      internalID: 8219983157843893114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 19, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7422f7e38d9e3fa50800000000000000
+      internalID: 6553838997724930631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_34
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 18, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2eb19f529c044ee0800000000000000
+      internalID: -1277882571458232789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_35
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 34, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5c0906fb0850660800000000000000
+      internalID: 7351423526199412164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_36
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 34, z: 0, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da241196efabaf60800000000000000
+      internalID: 8046718564038879959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 34, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a599dce513c1920800000000000000
+      internalID: 2962296938149009978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 9, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09be56b860232780800000000000000
+      internalID: -8709081620296058614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites Luz P 002_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 9, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5a210ea139ec230800000000000000
+      internalID: 3661025290736543179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1497ee47bfda34d44b41f29252de66d8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprites Luz P 002_0: 2456075290308068561
+      sprites Luz P 002_1: -2531034302670743422
+      sprites Luz P 002_10: 71262609652011186
+      sprites Luz P 002_11: -718987888045482886
+      sprites Luz P 002_12: -4135794739150493990
+      sprites Luz P 002_13: -7911624680041225989
+      sprites Luz P 002_14: -3705043594973717822
+      sprites Luz P 002_15: -3446788262229201834
+      sprites Luz P 002_16: 738338933115238165
+      sprites Luz P 002_17: 588240014187201944
+      sprites Luz P 002_18: -4796803185656165131
+      sprites Luz P 002_19: 3837583374730699803
+      sprites Luz P 002_2: 4400392931100524474
+      sprites Luz P 002_20: 3130629620380924481
+      sprites Luz P 002_21: -4892124218116325757
+      sprites Luz P 002_22: 5810886479398530782
+      sprites Luz P 002_23: 1232238810587579957
+      sprites Luz P 002_24: -4080509415112017613
+      sprites Luz P 002_25: 2146361060867007714
+      sprites Luz P 002_26: -6687240266301124315
+      sprites Luz P 002_27: 4922466925150349453
+      sprites Luz P 002_28: -1238587641157055356
+      sprites Luz P 002_29: -97157603025160530
+      sprites Luz P 002_3: -7167903843129993033
+      sprites Luz P 002_30: -1533158983629816513
+      sprites Luz P 002_31: -4503877637138487904
+      sprites Luz P 002_32: 8219983157843893114
+      sprites Luz P 002_33: 6553838997724930631
+      sprites Luz P 002_34: -1277882571458232789
+      sprites Luz P 002_35: 7351423526199412164
+      sprites Luz P 002_36: 8046718564038879959
+      sprites Luz P 002_37: 2962296938149009978
+      sprites Luz P 002_38: -8709081620296058614
+      sprites Luz P 002_39: 3661025290736543179
+      sprites Luz P 002_4: 2469077368913785961
+      sprites Luz P 002_5: -2832000256234607242
+      sprites Luz P 002_6: -5694527674551994324
+      sprites Luz P 002_7: -8482745281936897999
+      sprites Luz P 002_8: 1538703031160080211
+      sprites Luz P 002_9: -8468751095961761967
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
