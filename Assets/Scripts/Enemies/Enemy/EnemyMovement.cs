@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector2 direction = transform.position - player.position;
 
-        if(direction.magnitude < 6.5 && !inLight)
+        if(direction.magnitude < 3 && !inLight)
         {
             Vector2 toplayer = (player.position - transform.position).normalized;
             movement = new Vector2(toplayer.x, toplayer.y);
