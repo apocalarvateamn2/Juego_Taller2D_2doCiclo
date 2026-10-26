@@ -2,12 +2,20 @@ using UnityEngine;
 
 public class DoorBehaviour : MonoBehaviour
 {
-    [SerializeField] private GameObject door;
     [SerializeField] private Buttons[] requiredButtons;
     [SerializeField] private bool requireRightColors;
+    [SerializeField] private GameObject door;
+    private bool permanentlyOpen = false;
 
+    
     private void Update()
     {
+        if (permanentlyOpen)
+        {
+            door.SetActive(false);
+            return;
+        }
+
         if (AllButtons())
         {
             door.SetActive(false);
@@ -15,6 +23,11 @@ public class DoorBehaviour : MonoBehaviour
         else door.SetActive(true);
     }
 
+    public void OpenPermanently()
+    {
+        permanentlyOpen = true;
+        door.SetActive(false);
+    }
     private bool AllButtons()
     {
         if (requiredButtons.Length == 0) return false;

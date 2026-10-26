@@ -2,19 +2,13 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    private bool isOpen;
+    [SerializeField] private DoorBehaviour doorBh;
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(Colors.counter == 2 && !isOpen)
+        if (collision.CompareTag("Player"))
         {
-            isOpen = true;
-            OpenDoor();
+            doorBh.OpenPermanently();
         }
-    }
-
-    private void OpenDoor()
-    {
-        Destroy(gameObject);
     }
 }
