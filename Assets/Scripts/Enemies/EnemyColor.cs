@@ -4,8 +4,9 @@ public class EnemyColor : MonoBehaviour
 {
     public enum EmyColor
     {
-        Pink,
-        Blue,
-        None
+        red,
+        yellow,
+        green,
+        none
     }
 }

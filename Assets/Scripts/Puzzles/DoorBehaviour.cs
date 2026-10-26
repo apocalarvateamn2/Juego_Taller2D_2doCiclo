@@ -4,6 +4,7 @@ public class DoorBehaviour : MonoBehaviour
 {
     [SerializeField] private GameObject door;
     [SerializeField] private Buttons[] requiredButtons;
+    [SerializeField] private bool requireRightColors;
 
     private void Update()
     {
@@ -20,8 +21,9 @@ public class DoorBehaviour : MonoBehaviour
 
         foreach (Buttons button in requiredButtons)
         {
-            if (button == null || !button.isOnButton)
-                return false;
+            if (button == null || !button.isOnButton) return false;
+             
+            if (requireRightColors && !button.isActivated) return false;
         }
 
         return true;
