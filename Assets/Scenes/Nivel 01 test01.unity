@@ -567,6 +567,63 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1001 &96775132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46.527515
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -37.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140650946660775158, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245065601038474674, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
+      propertyPath: m_Name
+      value: redsidedoor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58abb4a221b00fe4b9d15401c18377a7, type: 3}
 --- !u!1001 &119623631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1196,6 +1253,63 @@ MonoBehaviour:
   cam: {fileID: 1237079487}
   normalSize: 2.61
   zoomSpeed: 1.5
+--- !u!1001 &187199557
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -41.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930560883222369571, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065580413190753615, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
+      propertyPath: m_Name
+      value: brownsidedoor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4376e9a7fd2018e459d6c80a3133935b, type: 3}
 --- !u!1 &196159553
 GameObject:
   m_ObjectHideFlags: 0
@@ -101804,3 +101918,5 @@ SceneRoots:
   - {fileID: 1969828705}
   - {fileID: 348264982}
   - {fileID: 445501617}
+  - {fileID: 187199557}
+  - {fileID: 96775132}
