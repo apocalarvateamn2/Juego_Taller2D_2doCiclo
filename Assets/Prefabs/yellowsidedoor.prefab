@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5708605206491527304}
   - component: {fileID: 8446839629142576961}
   m_Layer: 0
-  m_Name: yellowsidedoor
+  m_Name: yellowSideDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -795857149
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6591171621720883941, guid: 09d6bd39c361886498330ca6d94bd451, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

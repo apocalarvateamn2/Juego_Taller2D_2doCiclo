@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 388692463630372714}
   - component: {fileID: 6897556419907326749}
   m_Layer: 0
-  m_Name: brownsidedoor
+  m_Name: brownSideDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -795857149
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2603170446728609059, guid: 09d6bd39c361886498330ca6d94bd451, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
