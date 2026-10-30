@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 09d6bd39c361886498330ca6d94bd451
+guid: 777b8082dde20df42bff21c69fa5dc9e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -581390214652403061
-    second: Door side_0
+      213: -1185172108183253288
+    second: Puerta lateral _0
   - first:
-      213: -6591171621720883941
-    second: Door side_1
+      213: 905346677800343137
+    second: Puerta lateral _1
   - first:
-      213: 2603170446728609059
-    second: Door side_2
+      213: -3036349360036827546
+    second: Puerta lateral _2
   - first:
-      213: -2139105286684239448
-    second: Door side_3
+      213: -8229353996490487684
+    second: Puerta lateral _3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door side_0
+      name: Puerta lateral _0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 151
-        width: 28
+        x: 66
+        y: 159
+        width: 29
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8261cb1eac7ee7f0800000000000000
-      internalID: -581390214652403061
+      spriteID: 8de49063f3c6d8fe0800000000000000
+      internalID: -1185172108183253288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door side_1
+      name: Puerta lateral _1
       rect:
         serializedVersion: 2
-        x: 58
-        y: 151
-        width: 28
+        x: 161
+        y: 159
+        width: 29
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1df0b1e4547784a0800000000000000
-      internalID: -6591171621720883941
+      spriteID: 1669ed8b100709c00800000000000000
+      internalID: 905346677800343137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door side_2
+      name: Puerta lateral _2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 54
-        width: 28
+        x: 66
+        y: 63
+        width: 29
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -168,19 +168,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32dbd07aab1502420800000000000000
-      internalID: 2603170446728609059
+      spriteID: 66e25052858bcd5d0800000000000000
+      internalID: -3036349360036827546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door side_3
+      name: Puerta lateral _3
       rect:
         serializedVersion: 2
-        x: 58
-        y: 54
-        width: 28
+        x: 161
+        y: 63
+        width: 29
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a99602431f5052e0800000000000000
-      internalID: -2139105286684239448
+      spriteID: c784e3424267bcd80800000000000000
+      internalID: -8229353996490487684
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Door side_0: -581390214652403061
-      Door side_1: -6591171621720883941
-      Door side_2: 2603170446728609059
-      Door side_3: -2139105286684239448
+      Puerta lateral _0: -1185172108183253288
+      Puerta lateral _1: 905346677800343137
+      Puerta lateral _2: -3036349360036827546
+      Puerta lateral _3: -8229353996490487684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
