@@ -5,7 +5,7 @@ public class ClicButton : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("New Scene");
+        SceneManager.LoadScene("Nivel 01 test01");
     }
     public void Credits()
     {

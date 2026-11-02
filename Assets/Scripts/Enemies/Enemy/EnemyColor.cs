@@ -7,6 +7,7 @@ public class EnemyColor : MonoBehaviour
         red,
         yellow,
         green,
+        brown,
         none
     }
 }

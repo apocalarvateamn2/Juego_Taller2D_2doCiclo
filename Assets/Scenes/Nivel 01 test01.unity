@@ -3084,6 +3084,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8476907026966402666, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -3205,6 +3209,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 650103022}
     m_Modifications:
+    - target: {fileID: -7253980615234378655, guid: 6db53fe4c2ba2b0428c13f8caf0b6dda, type: 3}
+      propertyPath: requiresColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 115480038855702267, guid: 6db53fe4c2ba2b0428c13f8caf0b6dda, type: 3}
       propertyPath: m_Name
       value: 'defaultButton '
@@ -3455,7 +3463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorBehaviour
   requiredButtons:
   - {fileID: 1248429639}
-  requireRightColors: 0
+  requireRightColors: 1
   door: {fileID: 1564128682}
 --- !u!1001 &557035084
 PrefabInstance:
@@ -20761,7 +20769,7 @@ Transform:
   m_GameObject: {fileID: 692720908}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.2677, y: -37.3558, z: -10}
+  m_LocalPosition: {x: 0.38560003, y: 16.1742, z: -10}
   m_LocalScale: {x: 1.6402104, y: 1.6402104, z: 1.6402104}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22280,7 +22288,7 @@ MonoBehaviour:
   requiredButtons:
   - {fileID: 1011331145}
   - {fileID: 1096393011}
-  requireRightColors: 0
+  requireRightColors: 1
   door: {fileID: 2139022640}
 --- !u!1001 &948402321
 PrefabInstance:
@@ -23556,7 +23564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorBehaviour
   requiredButtons:
   - {fileID: 7047740399195301824}
-  requireRightColors: 0
+  requireRightColors: 1
   door: {fileID: 1566457596}
 --- !u!1 &1079820526
 GameObject:
@@ -94498,7 +94506,7 @@ Transform:
   m_GameObject: {fileID: 1237079485}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.2677, y: -37.3558, z: -10}
+  m_LocalPosition: {x: 0.38560003, y: 16.1742, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96107,11 +96115,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8418413810491819765, guid: 3952c08eae4b89b45a7662f53a2addef, type: 3}
       propertyPath: m_Size.y
-      value: 0.78770447
+      value: 1.1643791
       objectReference: {fileID: 0}
     - target: {fileID: 8418413810491819765, guid: 3952c08eae4b89b45a7662f53a2addef, type: 3}
       propertyPath: m_Offset.y
-      value: 0.25022507
+      value: 0.4385624
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -102172,7 +102180,7 @@ Transform:
   m_GameObject: {fileID: 2014946393}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.19, y: -38.43, z: 0}
+  m_LocalPosition: {x: 0.2, y: 15.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -103639,6 +103647,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 650103022}
     m_Modifications:
+    - target: {fileID: -7253980615234378655, guid: 6db53fe4c2ba2b0428c13f8caf0b6dda, type: 3}
+      propertyPath: requiredColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7253980615234378655, guid: 6db53fe4c2ba2b0428c13f8caf0b6dda, type: 3}
+      propertyPath: requiresColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 115480038855702267, guid: 6db53fe4c2ba2b0428c13f8caf0b6dda, type: 3}
       propertyPath: m_Name
       value: defaultButton
