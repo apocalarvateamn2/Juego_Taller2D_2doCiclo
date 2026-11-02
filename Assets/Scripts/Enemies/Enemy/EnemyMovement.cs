@@ -27,7 +27,8 @@ public class EnemyMovement : MonoBehaviour
             Vector2 toplayer = (player.position - transform.position).normalized;
             movement = new Vector2(toplayer.x, toplayer.y);
         }
-        else movement = Vector2.zero;
+        else 
+            movement = Vector2.zero;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -6,57 +6,34 @@ public class FlashLight : MonoBehaviour
 {
     [Header ("References")]
     [SerializeField] private InputActionReference flashLight;
+
+    [Header ("Light")]
     [SerializeField] private GameObject lightObject;
     [SerializeField] private Transform linterna;
+    [SerializeField] private GameObject detectionArea;
 
-    [Header ("Charge")]
-    [SerializeField] private float maxEnergy = 150f;
-    [SerializeField] private float usage = 15f;
-    [SerializeField] private float recharge = 10f;
+    [Header("Energy")]
+    [SerializeField] private FlashLightEnergy energy;
 
-    [Header ("UI")]
-    [SerializeField] private Image energyBar;
-
-    private float currentEnergy;
     private bool inUse = false;
 
-    public bool IsOn => inUse && currentEnergy > 0;
-
-    private void Start()
-    {
-        currentEnergy = maxEnergy;
-    }
+    public bool IsOn => inUse && energy.HasEnergy();
 
     private void Update()
     {
         LightDirection();
 
-        if (inUse && currentEnergy > 0)
-        {
-            currentEnergy -= usage * Time.deltaTime;
-            lightObject.SetActive(true);
-        }
-        else
-        {
-            lightObject.SetActive(false);
+        bool canUse = inUse && energy.HasEnergy();
 
-            if (!inUse)
-            {
-                currentEnergy += recharge * Time.deltaTime;
-            }
-           
-        }
+        lightObject.SetActive(canUse);
+        detectionArea.SetActive(canUse);
 
-        currentEnergy = Mathf.Clamp(currentEnergy, 0, maxEnergy);
-
-        if(currentEnergy <= 0)
-        {
-            lightObject.SetActive(false);
-        }
-
-        float fillAmount = currentEnergy / maxEnergy;
-        energyBar.fillAmount = Mathf.Lerp(energyBar.fillAmount, fillAmount, Time.deltaTime * 2.5f);
+        if (canUse)
+            energy.UseEnergy();
+        else if (!inUse)
+            energy.RechargeEnergy();
     }
+
     private void OnEnable()
     {
         flashLight.action.performed += LightManagerOn;
@@ -80,6 +57,8 @@ public class FlashLight : MonoBehaviour
         float angle = Vector2.SignedAngle(Vector2.up, direction);
 
         linterna.rotation = Quaternion.Euler(0, 0, angle);
+
+        detectionArea.transform.rotation = linterna.rotation;
     }
 
     private void LightManagerOn(InputAction.CallbackContext context)
