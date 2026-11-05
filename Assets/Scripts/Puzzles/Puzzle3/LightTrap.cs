@@ -1,29 +1,26 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using System.Collections.Generic;
 
-public class Puzzle3 : MonoBehaviour
+public class LightTrap : MonoBehaviour
 {
-    [Header ("UI")]
-    [SerializeField] private TextMeshProUGUI enemies;
-    [SerializeField] private TextMeshProUGUI timer;
-    [SerializeField] private TextMeshProUGUI cd;
-    [SerializeField] private GameObject puzzleUI;
-
     [Header ("Timers")]
     [SerializeField] private float timerInZone = 3;
     [SerializeField] private float timerCd = 5;
     [SerializeField] private float increaseTimer = 1.5f;
 
-    [Header ("Puzzle")]
+    [Header("Puzzle")]
     [SerializeField] private int requiredEnemies = 5;
     [SerializeField] private Light2D zone;
     [SerializeField] private GameObject door;
 
+    [Header("UI")]
+    [SerializeField] private Timers timersUI;
+
     private float initialTimerCd;
     private bool isInside = false;
     private bool inCd = false;
-    private Collider2D enemy;
+    private List<Collider2D> enemies = new List<Collider2D>(); 
 
     private void Awake()
     {
@@ -68,8 +65,14 @@ public class Puzzle3 : MonoBehaviour
 
     private void InZone()
     {
-        requiredEnemies--;
-        Destroy(enemy.gameObject);
+        requiredEnemies -= enemies.Count;
+
+        for (int i =  enemies.Count - 1; i >= 0; i--)
+        {
+            Destroy(enemies[i].gameObject);
+        }
+
+        enemies.Clear();
 
         isInside = false;
         inCd = true;
@@ -77,14 +80,13 @@ public class Puzzle3 : MonoBehaviour
 
         zone.color = Color.red;
 
-        if (requiredEnemies == 0)
+        if (requiredEnemies <= 0)
         {
+            requiredEnemies = 0;
             Destroy(door);
-            puzzleUI.SetActive(false);
+            timersUI.HideUI();
             zone.color = Color.green;
         }
-
-
     }
 
     private void InCd()
@@ -100,8 +102,10 @@ public class Puzzle3 : MonoBehaviour
     {
         if (collision.CompareTag("Enemy") && !inCd)
         {
+            if(!enemies.Contains(collision))
+                enemies.Add(collision);
+
             zone.color = Color.yellow;
-            enemy = collision;
             isInside = true;
             timerInZone = 5f;
         }
@@ -109,41 +113,28 @@ public class Puzzle3 : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && isInside)
+        if (collision.CompareTag("Enemy"))
         {
-            isInside = false;
-            timerInZone = 5f;
-            zone.color = Color.green;
+            enemies.Remove(collision);
+
+            if (enemies.Count == 0 && isInside)
+            {
+                isInside = false;
+                timerInZone = 5f;
+                zone.color = Color.green;
+            }
         }
-    }
-
-    private void FormatText(float seconds, TextMeshProUGUI text)
-    {
-        int minutes = (int)seconds / 60;
-        int second = (int) seconds % 60;
-
-        string format = "{00:00}:{1:00}";
-        text.SetText(string.Format(format, minutes, second));
     }
 
     private void UpdateText()
     {
-        enemies.text = requiredEnemies.ToString();
+        timersUI.UpdateEnemies(requiredEnemies);
+
         if (inCd)
-        {
-            timer.text = "";
-            FormatText(timerCd, cd);
-            
-        }
+            timersUI.UpdateTimer(timerCd, true);
         else if (isInside)
-        {
-            cd.text = "";
-            FormatText(timerInZone, timer);
-        }
+            timersUI.UpdateTimer(timerInZone, false);
         else
-        {
-            timer.text = "";
-            cd.text = "";
-        }
+            timersUI.ClearTimer();
     }
 }

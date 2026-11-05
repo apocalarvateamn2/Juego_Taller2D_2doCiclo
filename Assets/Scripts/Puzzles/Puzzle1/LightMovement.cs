@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Puzzle1 : MonoBehaviour
+public class LightMovement : MonoBehaviour
 {
     [Header ("Rotation")]
     [SerializeField] private float duration = 5f;

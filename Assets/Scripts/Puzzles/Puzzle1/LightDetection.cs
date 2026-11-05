@@ -19,7 +19,7 @@ public class LightDetection : MonoBehaviour
     private Transform player;
     private PlayerStats playerSt;
     private Movement playerMovement;
-    private Puzzle1 lightController;
+    private LightMovement lightController;
  
 
     private void Awake()
@@ -29,7 +29,7 @@ public class LightDetection : MonoBehaviour
         playerMovement = player.GetComponent<Movement>();
         playerSt = player.GetComponent<PlayerStats>();
 
-        lightController = GetComponentInParent<Puzzle1>();
+        lightController = GetComponentInParent<LightMovement>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -43,9 +43,6 @@ public class LightDetection : MonoBehaviour
 
     private bool DetectPlayerWithRayCast(Transform origin, Transform target, LayerMask layer)
     {
-        //if (Vector2.Distance(origin.position, target.position) > range)
-        //    return false;
-
         Vector2 direction = (target.position - origin.position).normalized;
         float distance = Vector2.Distance(origin.position, target.position);
 
@@ -73,24 +70,6 @@ public class LightDetection : MonoBehaviour
         lightController.canMove = false;
         StartCoroutine(ChangeColor());
     }
-    //private void RaycastDetection()
-    //{
-    //    Vector2 direction = (player.position - rayOrigin.position).normalized;
-
-    //    RaycastHit2D hit = Physics2D.Raycast(rayOrigin.position, direction, detectionLayer);
-
-
-    //    if (hit.collider != null)
-    //    {
-    //        if (hit.collider.CompareTag("Player"))
-    //        {
-    //            Destroy(hit.collider.gameObject, 2f);
-    //            playerMovement.rb.constraints = RigidbodyConstraints2D.FreezeAll;
-    //            lightController.canMove = false;
-    //            StartCoroutine(ChangeColor());
-    //        }
-    //    }
-    //}
 
     private void OnDrawGizmos()
     {
