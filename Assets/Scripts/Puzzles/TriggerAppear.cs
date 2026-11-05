@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class TriggerEnemys : MonoBehaviour
+public class TriggerAppear : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject objeto;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        enemy.SetActive(true);
+        objeto.SetActive(true);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     private Transform player;
     private Rigidbody2D rb;
     private Vector2 movement;
+    public int distance;
  
     private bool inLight = false;
     private void Awake()
@@ -22,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector2 direction = transform.position - player.position;
 
-        if(direction.magnitude < 3 && !inLight)
+        if(direction.magnitude < distance && !inLight)
         {
             Vector2 toplayer = (player.position - transform.position).normalized;
             movement = new Vector2(toplayer.x, toplayer.y);
