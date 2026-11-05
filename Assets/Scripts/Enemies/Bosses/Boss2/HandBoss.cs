@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Rendering.Universal;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class HandBoss : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform hand;
