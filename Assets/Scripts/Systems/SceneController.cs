@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ClicButton : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     public void Play()
     {
