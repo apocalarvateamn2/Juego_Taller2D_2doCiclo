@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   speed: 2.6
+  distance: 0
   color: 3
 --- !u!114 &-7192324351390421629
 MonoBehaviour:

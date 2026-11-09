@@ -4,14 +4,14 @@ public class EnemyMovement : MonoBehaviour
 {
     [Header ("Movement")]
     [SerializeField] private float speed;
+    [SerializeField] private float distance;
 
     public EnemyColor.EmyColor color;
 
     private Transform player;
     private Rigidbody2D rb;
     private Vector2 movement;
-    public int distance;
- 
+   
     private bool inLight = false;
     private void Awake()
     {
