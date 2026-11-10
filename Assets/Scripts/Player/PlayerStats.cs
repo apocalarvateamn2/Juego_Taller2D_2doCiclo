@@ -12,13 +12,13 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private Image lifebar;
 
     private float currentHealth;
-    
-
+    private Vector2 positionCheckpoint;
 
     private void Start()
     {
         maxHealth = 100f;
         currentHealth = maxHealth;
+        positionCheckpoint = transform.position;
     }
 
     private void Update()
@@ -47,6 +47,10 @@ public class PlayerStats : MonoBehaviour
             StartCoroutine(Die());
         }
     }
+    public void NewCheckpoint(Vector2 newPosition)
+    {
+        positionCheckpoint = newPosition;
+    }
 
     IEnumerator Die()
     {
@@ -57,11 +61,21 @@ public class PlayerStats : MonoBehaviour
         {
             sprite.enabled = false;
         }
-        Invoke("Restart", 1f);
+        yield return new WaitForSeconds(0.5f);
+
+        transform.position = positionCheckpoint;
+        currentHealth = maxHealth;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = Vector2.zero;
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.enabled = true;
+        }
+        gameObject.GetComponent<Movement>().UnFreezePlayer();
     }
     
     private void Restart()
     {
-        SceneManager.LoadScene("Defeat"); //cambio de New Scene a Defeat
+        SceneManager.LoadScene("Defeat");
     }
 }
