@@ -72,6 +72,11 @@ public class PlayerStats : MonoBehaviour
             sprite.enabled = true;
         }
         gameObject.GetComponent<Movement>().UnFreezePlayer();
+        LightDetection[] allLights = FindObjectsByType<LightDetection>(FindObjectsSortMode.None);
+        foreach (LightDetection lightDet in allLights)
+        {
+            lightDet.ResetLight();
+        }
     }
     
     private void Restart()
