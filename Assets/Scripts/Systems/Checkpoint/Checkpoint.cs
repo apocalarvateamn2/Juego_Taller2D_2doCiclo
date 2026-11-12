@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public class Check : MonoBehaviour
+public class Checkpoint : MonoBehaviour
 {
     public Light2D checkpointLight;
 

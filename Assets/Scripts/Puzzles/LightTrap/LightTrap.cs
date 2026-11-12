@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
 
 public class LightTrap : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class LightTrap : MonoBehaviour
     [SerializeField] private int requiredEnemies = 5;
     [SerializeField] private Light2D zone;
     [SerializeField] private GameObject door;
+
+    [Header("RandomArea")]
+    [SerializeField] private Vector2 minArea;
+    [SerializeField] private Vector2 maxArea;
 
     [Header("UI")]
     [SerializeField] private Timers timersUI;
@@ -80,6 +85,8 @@ public class LightTrap : MonoBehaviour
 
         zone.color = Color.red;
 
+        MoveLightToRandomPosition();
+
         EnemyLightLevel2 levelEvents = GetComponent<EnemyLightLevel2>();
         levelEvents.LightNextEvent();
 
@@ -90,6 +97,14 @@ public class LightTrap : MonoBehaviour
             timersUI.HideUI();
             zone.color = Color.green;
         }
+    }
+
+    private void MoveLightToRandomPosition()
+    {
+        float randomX = Random.Range(minArea.x, maxArea.x);
+        float randomY = Random.Range(minArea.y, maxArea.y);
+
+        transform.position = new Vector3 (randomX, randomY, transform.position.z);
     }
 
     private void InCd()

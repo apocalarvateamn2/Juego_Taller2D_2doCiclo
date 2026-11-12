@@ -8,13 +8,21 @@ public class PlayerStats : MonoBehaviour
     [Header ("Health")]
     [SerializeField] private float maxHealth;
 
+    [Header("Inulverability")]
+    [SerializeField] private float invulnerabilityDuration = 1.5f;
+    [SerializeField] private float flashInterval = 0.15f;
+
     [Header ("UI")]
     [SerializeField] private Image lifebar;
 
     private float currentHealth;
+    private bool isInvulnerable = false;
+
+    private SpriteRenderer sr;
 
     private void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         maxHealth = 100f;
         currentHealth = maxHealth;
         CheckPoint();
@@ -28,6 +36,8 @@ public class PlayerStats : MonoBehaviour
 
     public void HealthLoss (float damage)
     {
+        if (isInvulnerable) return;
+
         currentHealth -= damage;
         CheckStatus();
     }
@@ -37,6 +47,10 @@ public class PlayerStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             StartCoroutine(Die());
+        }
+        else
+        {
+            StartCoroutine(Invulnerability());
         }
     }
 
@@ -58,6 +72,30 @@ public class PlayerStats : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         Restart();
+    }
+
+    IEnumerator Invulnerability()
+    {
+        isInvulnerable = true;
+
+        Color originalColor = sr.color;
+
+        float elapsed = 0f;
+
+        while (elapsed < invulnerabilityDuration)
+        {
+            sr.color = Color.red;
+            yield return new WaitForSeconds(flashInterval / 2f);
+
+            sr.color = originalColor;
+            yield return new WaitForSeconds(flashInterval / 2f);
+
+            elapsed += flashInterval;
+        }
+
+        sr.color = originalColor;
+
+        isInvulnerable = false;
     }
 
     

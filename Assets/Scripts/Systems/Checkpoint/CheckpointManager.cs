@@ -49,7 +49,7 @@ public class CheckpointManager : MonoBehaviour
 
     public void FadeToLastSavedScene()
     {
-        string sceneToRetry = GetLastScene("Nivel 01 test 01");
+        string sceneToRetry = GetLastScene("Nivel 01 test01");
 
         if (Fade.Instance != null)
         {
