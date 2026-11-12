@@ -692,6 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fade
   fadePrefab: {fileID: 8876596590869414434, guid: 4322a3da64f8b264a82a8928fda76929, type: 3}
+  fadeSpeed: 0.3
 --- !u!4 &1453628953
 Transform:
   m_ObjectHideFlags: 0

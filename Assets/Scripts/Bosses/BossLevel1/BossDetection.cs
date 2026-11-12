@@ -2,18 +2,21 @@ using UnityEngine;
 
 public class BossDetection : MonoBehaviour
 {
-    private BossBehaviour boss;
+    private CameraBossCinematic cinematicController;
 
     private void Awake()
     {
-        boss = GetComponentInParent<BossBehaviour>();
+        cinematicController = GetComponentInParent<CameraBossCinematic>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            boss.StartBossCombat();
+            if (cinematicController != null)
+                cinematicController.TriggerCinematic();
         }
+
+        gameObject.SetActive(false);
     }
 }

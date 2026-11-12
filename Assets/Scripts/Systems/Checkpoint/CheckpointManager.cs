@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 public class CheckpointManager : MonoBehaviour
 {
     public static CheckpointManager Instance; //guarda referencia global 

@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class Fade : MonoBehaviour
 {
     public static Fade Instance;
+
+    [Header ("Fade")]
     [SerializeField] private GameObject fadePrefab;
+    [SerializeField] private float fadeSpeed;
     private CanvasGroup group;
     private string sceneToLoad;
     private bool isFading = false;
@@ -30,7 +33,7 @@ public class Fade : MonoBehaviour
         group.alpha = 1;
         while (group.alpha > 0)
         {
-            group.alpha -= Time.deltaTime * 0.5f;
+            group.alpha -= Time.deltaTime * fadeSpeed;
             yield return null;
         }
         group.alpha = 0;
@@ -42,7 +45,7 @@ public class Fade : MonoBehaviour
         group.alpha = 0;
         while (group.alpha < 1)
         {
-            group.alpha += Time.deltaTime * 0.5f;
+            group.alpha += Time.deltaTime * fadeSpeed;
             yield return null;
         }
         group.alpha = 1;

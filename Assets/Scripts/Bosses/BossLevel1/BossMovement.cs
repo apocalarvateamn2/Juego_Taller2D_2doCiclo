@@ -78,4 +78,20 @@ public class BossMovement : MonoBehaviour
             yield return null;
         }
     }
+
+    public IEnumerator FallAtPositionCinematic(Vector3 targetPosition, float fallSpeed)
+    {
+        if (zone != null)
+        {
+            zone.transform.position = targetPosition;
+        }
+
+        while (Vector3.Distance(hand.position, targetPosition) > 0.01f)
+        {
+            hand.position = Vector3.MoveTowards(hand.position, targetPosition, fallSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        hand.position = targetPosition;
+    }
 }

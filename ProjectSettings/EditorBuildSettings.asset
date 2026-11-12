@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel 01 test01.unity
     guid: a8eb7d00002333243a14d029d7ff26c3
   - enabled: 1
+    path: Assets/Scenes/Boss 1.unity
+    guid: 89b9f20a3558ee3499c50be4bd93ff53
+  - enabled: 1
+    path: Assets/Scenes/Nivel 02 test01.unity
+    guid: bc3a38ef5fe4d164083ff893a39157ac
+  - enabled: 1
     path: Assets/Scenes/Defeat.unity
     guid: c38e6c9d95a324d4c8e5827b1d91806f
   - enabled: 1
@@ -23,9 +29,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/New Scene.unity
     guid: cdbc21f77fe12f2479ff1ae91c3641c2
-  - enabled: 0
-    path: Assets/Scenes/Nivel 02 test01.unity
-    guid: bc3a38ef5fe4d164083ff893a39157ac
   - enabled: 0
     path: Assets/Scenes/Victory.unity
     guid: 0d6877989f7290840a521530c97c6992

@@ -1,7 +1,7 @@
 using Unity.Cinemachine;
 using UnityEngine;
 
-public class cameraTriggers : MonoBehaviour
+public class CameraChange : MonoBehaviour
 {
     public CinemachineCamera cameraWoman;
 
