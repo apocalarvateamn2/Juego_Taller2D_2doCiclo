@@ -6,6 +6,9 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float distance;
 
+    [Header("Detection")]
+    [SerializeField] private LayerMask obstacleMask;
+
     public EnemyColor.EmyColor color;
 
     private Transform player;
@@ -21,15 +24,21 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
-        Vector2 direction = transform.position - player.position;
-
-        if(direction.magnitude < distance && !inLight)
-        {
-            Vector2 toplayer = (player.position - transform.position).normalized;
-            movement = new Vector2(toplayer.x, toplayer.y);
-        }
-        else 
+        if (!inLight && CanSeePlayer())
+            movement = (player.position - transform.position).normalized;
+        else
             movement = Vector2.zero;
+    }
+
+    private bool CanSeePlayer()
+    {
+        Vector2 toPlayer = player.position - transform.position;
+
+        if (toPlayer.magnitude > distance) return false;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, toPlayer.normalized,toPlayer.magnitude, obstacleMask);
+
+        return hit.collider == null;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,5 +65,20 @@ public class EnemyMovement : MonoBehaviour
     public void FreezeAll()
     {
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if(player == null) return;
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, distance);
+
+        Vector2 toPlayer = player.position - transform.position;
+        if(toPlayer.magnitude <= distance)
+        {
+            Gizmos.color = CanSeePlayer() ? Color.green : Color.red;
+            Gizmos.DrawLine(transform.position, player.position);
+        }
     }
 }

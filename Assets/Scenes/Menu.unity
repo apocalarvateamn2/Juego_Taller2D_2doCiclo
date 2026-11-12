@@ -431,6 +431,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1453628952}
+        m_TargetAssemblyTypeName: Fade, Assembly-CSharp
+        m_MethodName: FadeToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Nivel 01 test 01
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &449604072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,8 +493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60c94fd9010683429e7123a41ad0e55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuOptionShake
-  shakeAmount: 25
-  shakeSpeed: 25
+  shakeAmount: 3
+  shakeSpeed: 5
 --- !u!1 &1174406455
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +662,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1453628951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453628953}
+  - component: {fileID: 1453628952}
+  m_Layer: 0
+  m_Name: FadeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1453628952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453628951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508138ca3f0f8744f891021467feff08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fade
+  fadePrefab: {fileID: 8876596590869414434, guid: 4322a3da64f8b264a82a8928fda76929, type: 3}
+--- !u!4 &1453628953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453628951}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.28148, y: -48.66556, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751996122
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +803,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1453628952}
+        m_TargetAssemblyTypeName: Fade, Assembly-CSharp
+        m_MethodName: FadeToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Credits
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1751996125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,8 +865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60c94fd9010683429e7123a41ad0e55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuOptionShake
-  shakeAmount: 25
-  shakeSpeed: 25
+  shakeAmount: 3
+  shakeSpeed: 5
 --- !u!1 &1844453586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,3 +1361,4 @@ SceneRoots:
   - {fileID: 1434996894}
   - {fileID: 39641188}
   - {fileID: 1174406457}
+  - {fileID: 1453628953}

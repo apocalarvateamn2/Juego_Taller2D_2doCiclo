@@ -12,20 +12,18 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private Image lifebar;
 
     private float currentHealth;
-    private Vector2 positionCheckpoint;
 
     private void Start()
     {
         maxHealth = 100f;
         currentHealth = maxHealth;
-        positionCheckpoint = transform.position;
+        CheckPoint();
     }
 
     private void Update()
     {
         float targetFill = currentHealth / maxHealth;
         lifebar.fillAmount = Mathf.Lerp(lifebar.fillAmount, targetFill, Time.deltaTime * 5);
-
     }
 
     public void HealthLoss (float damage)
@@ -34,12 +32,6 @@ public class PlayerStats : MonoBehaviour
         CheckStatus();
     }
 
-    //public void HealthGain (float amount)
-    //{
-    //    currentHealth += amount;
-    //    currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-    //}
-
     private void CheckStatus()
     {
         if (currentHealth <= 0)
@@ -47,9 +39,11 @@ public class PlayerStats : MonoBehaviour
             StartCoroutine(Die());
         }
     }
-    public void NewCheckpoint(Vector2 newPosition)
+
+    private void CheckPoint()
     {
-        positionCheckpoint = newPosition;
+        if(CheckpointManager.Instance != null)
+            transform.position = CheckpointManager.Instance.GetSpawnPosition(transform.position);
     }
 
     IEnumerator Die()
@@ -63,15 +57,7 @@ public class PlayerStats : MonoBehaviour
         }
         yield return new WaitForSeconds(0.5f);
 
-        transform.position = positionCheckpoint;
-        currentHealth = maxHealth;
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector2.zero;
-        foreach (SpriteRenderer sprite in sprites)
-        {
-            sprite.enabled = true;
-        }
-        gameObject.GetComponent<Movement>().UnFreezePlayer();
+        Restart();
     }
     
     private void Restart()
