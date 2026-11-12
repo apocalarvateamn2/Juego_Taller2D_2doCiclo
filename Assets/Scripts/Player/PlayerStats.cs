@@ -57,7 +57,24 @@ public class PlayerStats : MonoBehaviour
         }
         yield return new WaitForSeconds(0.5f);
 
+<<<<<<< HEAD
         Restart();
+=======
+        transform.position = positionCheckpoint;
+        currentHealth = maxHealth;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = Vector2.zero;
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.enabled = true;
+        }
+        gameObject.GetComponent<Movement>().UnFreezePlayer();
+        LightDetection[] allLights = FindObjectsByType<LightDetection>(FindObjectsSortMode.None);
+        foreach (LightDetection lightDet in allLights)
+        {
+            lightDet.ResetLight();
+        }
+>>>>>>> 0800c981fccce0591bd37aeb43ea6c065131698c
     }
     
     private void Restart()

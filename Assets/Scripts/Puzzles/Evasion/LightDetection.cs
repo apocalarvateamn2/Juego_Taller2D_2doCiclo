@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -15,6 +16,7 @@ public class LightDetection : MonoBehaviour
 
     [Header ("Settings")]
     [SerializeField] private float colorCd = 2f;
+    [SerializeField] private Color patrolColor = Color.white;
 
     private Transform player;
     private PlayerStats playerSt;
@@ -83,6 +85,12 @@ public class LightDetection : MonoBehaviour
     {
         spotLight.color = Color.red;
         yield return new WaitForSeconds(colorCd);
-        spotLight.color = Color.white;
+        spotLight.color = patrolColor;
+    }
+    public void ResetLight()
+    {
+        lightController.canMove = true;
+        spotLight.color = patrolColor;
+
     }
 }

@@ -80,6 +80,9 @@ public class LightTrap : MonoBehaviour
 
         zone.color = Color.red;
 
+        EnemyLightLevel2 levelEvents = GetComponent<EnemyLightLevel2>();
+        levelEvents.LightNextEvent();
+
         if (requiredEnemies <= 0)
         {
             requiredEnemies = 0;

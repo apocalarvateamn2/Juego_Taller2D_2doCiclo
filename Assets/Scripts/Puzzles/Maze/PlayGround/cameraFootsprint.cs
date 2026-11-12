@@ -11,18 +11,18 @@ public class cameraFootsprint : MonoBehaviour
     [SerializeField] private float intensidadNormal = 1f;
     [SerializeField] private float intensidadOscura = 0.3f;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             camaraPequeña.Priority.Value = 15;
             luzGlobal.intensity = intensidadOscura;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             camaraPequeña.Priority.Value = 0;
             luzGlobal.intensity = intensidadNormal;
