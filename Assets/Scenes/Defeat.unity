@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 457400538}
   - component: {fileID: 457400539}
   m_Layer: 0
-  m_Name: Replay
+  m_Name: RestartBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,9 +277,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 457400537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32efcfdd4f7106d4487cdf3e1f038033, type: 3}
+  m_Script: {fileID: 11500000, guid: ae69ddca7c124064d863607bfae08f8b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DefeatButton
+  m_EditorClassIdentifier: Assembly-CSharp::RestartButton
 --- !u!1 &825530903
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 981425944}
   - component: {fileID: 981425943}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Replay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,20 +579,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1930617561}
-        m_TargetAssemblyTypeName: ClicButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 457400539}
-        m_TargetAssemblyTypeName: DefeatButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
         m_MethodName: OnReplayButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -1133,7 +1121,7 @@ GameObject:
   - component: {fileID: 2106693592}
   - component: {fileID: 2106693591}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

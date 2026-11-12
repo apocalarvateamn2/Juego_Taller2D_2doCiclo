@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DefeatButton : MonoBehaviour
+public class RestartButton : MonoBehaviour
 {
     public void OnReplayButtonClicked()
     {
@@ -9,4 +9,5 @@ public class DefeatButton : MonoBehaviour
             CheckpointManager.Instance.FadeToLastSavedScene();
         }
     }
+
 }
