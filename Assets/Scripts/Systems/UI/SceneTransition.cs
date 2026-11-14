@@ -13,7 +13,9 @@ public class SceneTransition : MonoBehaviour
 
     private void ChangeScene()
     {
-        if(!string.IsNullOrEmpty(nextSceneName))
-            SceneManager.LoadScene(nextSceneName);
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            if(Fade.Instance != null) Fade.Instance.FadeToScene(nextSceneName);
+        }
     }
 }

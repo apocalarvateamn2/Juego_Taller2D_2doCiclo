@@ -7,7 +7,8 @@ public class Checkpoint : MonoBehaviour
 
     private void Start()
     {
-        if (checkpointLight != null) checkpointLight.enabled = false;
+        if (checkpointLight != null) 
+            checkpointLight.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,7 +17,9 @@ public class Checkpoint : MonoBehaviour
         {
             CheckpointManager.Instance.SaveCheckPoint(transform.position);
 
-            if (checkpointLight != null) checkpointLight.enabled = true;
+            if (checkpointLight != null) 
+                checkpointLight.enabled = true;
+
             GetComponent<Collider2D>().enabled = false;
         }
     }

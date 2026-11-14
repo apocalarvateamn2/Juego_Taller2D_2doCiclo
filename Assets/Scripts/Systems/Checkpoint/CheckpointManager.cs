@@ -4,14 +4,15 @@ public class CheckpointManager : MonoBehaviour
 {
     public static CheckpointManager Instance; //guarda referencia global 
 
+    private Vector2 checkpointPosition;
+    private string checkpointScene;
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-
-            ResetCheckpoint();
         }
         else
             Destroy(gameObject);
@@ -19,51 +20,28 @@ public class CheckpointManager : MonoBehaviour
 
     public void SaveCheckPoint(Vector2 position)
     {
-        PlayerPrefs.SetFloat("CheckpointX", position.x);
-        PlayerPrefs.SetFloat("CheckpointY", position.y);
+        checkpointPosition = position;
 
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetString("LastScene", currentSceneName);
-
-        PlayerPrefs.Save();
+        checkpointScene = SceneManager.GetActiveScene().name;
     }
 
-    public Vector2 GetSpawnPosition(Vector2 position)
+    public Vector2 GetSpawnPosition(Vector2 initialPosition)
     {
-        if (PlayerPrefs.HasKey("CheckpointX"))
-        {
-            float x = PlayerPrefs.GetFloat("CheckpointX");
-            float y = PlayerPrefs.GetFloat("CheckpointY");
-            return new Vector2(x, y);
-        }
+        string currentScene = SceneManager.GetActiveScene().name;
 
-        return position;
-    }
+        if (checkpointScene == currentScene)
+            return checkpointPosition;
 
-    private string GetLastScene(string scene)
-    {
-        return PlayerPrefs.GetString("LastScene", scene);
+        return initialPosition;
     }
 
     public void FadeToLastSavedScene()
     {
-        string sceneToRetry = GetLastScene("Nivel 01 test01");
+        string scene = SceneManager.GetActiveScene().name;
 
-        if (Fade.Instance != null)
-        {
-            Fade.Instance.FadeToScene(sceneToRetry);
-        }
+        if(Fade.Instance != null)
+            Fade.Instance.FadeToScene(scene);
         else
-        {
-            SceneManager.LoadScene(sceneToRetry);
-        }
-    }
-
-    private void ResetCheckpoint()
-    {
-        PlayerPrefs.DeleteKey("CheckpointX");
-        PlayerPrefs.DeleteKey("CheckpointY");
-        PlayerPrefs.DeleteKey("LastScene");
-        PlayerPrefs.Save();
+            SceneManager.LoadScene(scene);
     }
 }

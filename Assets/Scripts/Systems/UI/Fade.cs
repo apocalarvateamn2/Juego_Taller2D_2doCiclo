@@ -14,16 +14,29 @@ public class Fade : MonoBehaviour
     private string sceneToLoad;
     private bool isFading = false;
 
+    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this; ;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+    }
     private void Start()
     {
-        GameObject panel = Instantiate(fadePrefab);
+        GameObject panel = Instantiate(fadePrefab, transform);
+
         group = panel.GetComponentInChildren<CanvasGroup>();
+
         StartCoroutine(FadeIn());
     }
 
     public void FadeToScene(string sceneName)
     {
         if (isFading) return;
+
         sceneToLoad = sceneName;
         StartCoroutine(FadeOut());
     }
@@ -31,24 +44,34 @@ public class Fade : MonoBehaviour
     IEnumerator FadeIn()
     {
         group.alpha = 1;
+
         while (group.alpha > 0)
         {
             group.alpha -= Time.deltaTime * fadeSpeed;
             yield return null;
         }
+
         group.alpha = 0;
+        isFading = false;
     }
 
     IEnumerator FadeOut()
     {
         isFading = true;
         group.alpha = 0;
+
         while (group.alpha < 1)
         {
             group.alpha += Time.deltaTime * fadeSpeed;
             yield return null;
         }
+
         group.alpha = 1;
+
         SceneManager.LoadScene(sceneToLoad);
+
+        yield return null;
+
+        StartCoroutine(FadeIn());
     }
 }
