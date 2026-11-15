@@ -37,11 +37,11 @@ public class CheckpointManager : MonoBehaviour
 
     public void FadeToLastSavedScene()
     {
-        string scene = SceneManager.GetActiveScene().name;
+        if(string.IsNullOrEmpty(checkpointScene)) return;
 
         if(Fade.Instance != null)
-            Fade.Instance.FadeToScene(scene);
+            Fade.Instance.FadeToScene(checkpointScene);
         else
-            SceneManager.LoadScene(scene);
+            SceneManager.LoadScene(checkpointScene);
     }
 }
