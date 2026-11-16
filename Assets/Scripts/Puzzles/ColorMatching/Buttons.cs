@@ -10,12 +10,12 @@ public class Buttons : MonoBehaviour
     [HideInInspector] public bool isOnButton => objectsOnButton > 0;
     [HideInInspector] public bool isActivated;
     private int objectsOnButton = 0;
-    
+
     private bool CanActivate(Collider2D collision)
     {
         if (requiresColor)
         {
-            if(!collision.CompareTag("Enemy")) return false;
+            if (!collision.CompareTag("Enemy")) return false;
 
             if (collision.TryGetComponent(out EnemyMovement enemy))
                 return enemy.color == requiredColor;
@@ -23,7 +23,7 @@ public class Buttons : MonoBehaviour
             return false;
         }
 
-        return collision.CompareTag("Enemy");
+        return collision.CompareTag("Enemy") || collision.CompareTag("Player");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
