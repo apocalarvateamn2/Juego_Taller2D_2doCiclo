@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Buttons : MonoBehaviour
@@ -6,10 +5,13 @@ public class Buttons : MonoBehaviour
     [SerializeField] private bool requiresColor;
     [SerializeField] private EnemyColor.EmyColor requiredColor;
     [SerializeField] private GameObject bottonPressed;
+    [SerializeField] private Transform centerPoint;
 
     [HideInInspector] public bool isOnButton => objectsOnButton > 0;
     [HideInInspector] public bool isActivated;
     private int objectsOnButton = 0;
+
+    private float moveSpeed;
 
     private bool CanActivate(Collider2D collision)
     {
@@ -31,6 +33,17 @@ public class Buttons : MonoBehaviour
 
         if (collision.TryGetComponent(out EnemyMovement enemy))
         {
+            if (centerPoint != null)
+            {
+                Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+
+                if( rb != null)
+                {
+                    rb.linearVelocity = Vector2.zero;
+                    rb.position = centerPoint.position;
+                }
+            }
+
             enemy.FreezeAll();
         }
 
@@ -41,7 +54,6 @@ public class Buttons : MonoBehaviour
             
         objectsOnButton++;
         isActivated = true;
-        
     }
 
     //private void OnTriggerExit2D(Collider2D collision)

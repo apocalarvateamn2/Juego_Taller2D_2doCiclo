@@ -8,6 +8,8 @@ public class Movement : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float speed;
+    [SerializeField] private float acelerationSpeed;
+    [SerializeField] private float decelerationSpeed;
 
     private Vector2 direction;
     private Rigidbody2D rb;
@@ -22,7 +24,11 @@ public class Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(direction.x * speed, direction.y * speed);  
+        Vector2 targetVelocity = direction * speed;
+
+        float currentAceleration = direction != Vector2.zero ? acelerationSpeed : decelerationSpeed;
+
+        rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, targetVelocity, currentAceleration * Time.fixedDeltaTime);  
     }
 
     public void FreezePlayer()
