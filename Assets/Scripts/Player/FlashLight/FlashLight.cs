@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -15,9 +16,15 @@ public class FlashLight : MonoBehaviour
     [Header("Energy")]
     [SerializeField] private FlashLightEnergy energy;
 
+    private Movement move;
     private bool inUse = false;
 
     public bool IsOn => inUse && energy.HasEnergy();
+
+    private void Awake()
+    {
+        move = GetComponent<Movement>();
+    }
 
     private void Update()
     {
@@ -52,7 +59,7 @@ public class FlashLight : MonoBehaviour
 
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        Vector2 direction = mouseWorldPosition - linterna.position;
+        Vector2 direction = (Vector2)mouseWorldPosition - (Vector2)linterna.position;
 
         float angle = Vector2.SignedAngle(Vector2.up, direction);
 

@@ -5,6 +5,7 @@ public class BossBehaviour : MonoBehaviour
 {
     [Header("Win Conditions")]
     [SerializeField] private int requieredEnemies = 10;
+    [SerializeField] private GameObject door;
 
     private BossMovement movement;
     private BossCombat combat;
@@ -56,5 +57,6 @@ public class BossBehaviour : MonoBehaviour
         }
 
         Destroy(gameObject, 0.5f);
+        door.SetActive(false);
     }
 }
