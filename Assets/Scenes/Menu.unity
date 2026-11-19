@@ -372,7 +372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -508.69196, y: 303.04294}
+  m_AnchoredPosition: {x: -552, y: 326}
   m_SizeDelta: {x: 253.584, y: 50.869}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &449604071
@@ -493,8 +493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60c94fd9010683429e7123a41ad0e55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuOptionShake
-  shakeAmount: 3
-  shakeSpeed: 5
+  shakeAmount: 12
+  shakeSpeed: 9
 --- !u!1 &1174406455
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +655,7 @@ RectTransform:
   - {fileID: 449604070}
   - {fileID: 1751996123}
   - {fileID: 1860008420}
+  - {fileID: 1502690907}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -776,6 +777,96 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1502690906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1502690907}
+  - component: {fileID: 1502690909}
+  - component: {fileID: 1502690908}
+  - component: {fileID: 1502690910}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1502690907
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502690906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.4, y: 4.4, z: 4.4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1434996894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1230, y: -284}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1502690908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502690906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7145198348311737387, guid: e682738e2b69dc54381bb3cc677b1d33, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1502690909
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502690906}
+  m_CullTransparentMesh: 1
+--- !u!114 &1502690910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502690906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c94fd9010683429e7123a41ad0e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuOptionShake
+  shakeAmount: 8
+  shakeSpeed: 5
 --- !u!1 &1751996122
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.288}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -507, y: 179}
+  m_AnchoredPosition: {x: -489, y: 115}
   m_SizeDelta: {x: 356.678, y: 70.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751996124
@@ -934,8 +1025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60c94fd9010683429e7123a41ad0e55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuOptionShake
-  shakeAmount: 3
-  shakeSpeed: 5
+  shakeAmount: 8
+  shakeSpeed: 9
 --- !u!1 &1844453586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,10 +1333,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1434996894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -818, y: -361}
-  m_SizeDelta: {x: 158.597, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 419, y: -361}
+  m_SizeDelta: {x: 158.59705, y: -1030}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860008421
 MonoBehaviour:
@@ -1302,7 +1393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2118275358
 RectTransform:
   m_ObjectHideFlags: 0
