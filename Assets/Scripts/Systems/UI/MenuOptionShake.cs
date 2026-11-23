@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MenuOptionShake : MonoBehaviour
 {
-    [SerializeField] private float shakeAmount = 3f;   // intensidad (en píxeles de UI)
-    [SerializeField] private float shakeSpeed = 25f;   // qué tan rápido tiembla
+    [SerializeField] private float shakeAmount = 3f;
+    [SerializeField] private float shakeSpeed = 25f;
 
     private RectTransform rectTransform;
     private Vector2 originalPosition;
@@ -14,7 +14,7 @@ public class MenuOptionShake : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
         originalPosition = rectTransform.anchoredPosition;
-        seed = Random.value * 100f; // para que cada opción tiemble distinto
+        seed = Random.value * 100f;
     }
 
     private void Update()
