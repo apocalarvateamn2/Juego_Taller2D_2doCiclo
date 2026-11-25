@@ -12,6 +12,7 @@ public class FlashLight : MonoBehaviour
     [SerializeField] private GameObject lightObject;
     [SerializeField] private Transform linterna;
     [SerializeField] private GameObject detectionArea;
+    [SerializeField] private GameObject environmentLightObject;
 
     [Header("Energy")]
     [SerializeField] private FlashLightEnergy energy;
@@ -33,6 +34,7 @@ public class FlashLight : MonoBehaviour
         bool canUse = inUse && energy.HasEnergy();
 
         lightObject.SetActive(canUse);
+        environmentLightObject.SetActive(canUse);
         detectionArea.SetActive(canUse);
 
         if (canUse)

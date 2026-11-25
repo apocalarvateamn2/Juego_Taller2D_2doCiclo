@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
 
     private Transform flashlight;
     private Vector2 direction;
+    private Vector2 lastDirection = Vector2.down;
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -39,8 +40,18 @@ public class Movement : MonoBehaviour
 
     private void Animation()
     {
+        bool isMoving = direction != Vector2.zero;
+
+        if(isMoving)
+            lastDirection = direction;
+
         anim.SetFloat("Move X", direction.x);
         anim.SetFloat("Move Y", direction.y);
+
+        anim.SetFloat("LastMoveX", lastDirection.x);
+        anim.SetFloat("LastMoveY", lastDirection.y);
+
+        anim.SetBool("IsMoving", isMoving);
     }
 
     public void FreezePlayer()
