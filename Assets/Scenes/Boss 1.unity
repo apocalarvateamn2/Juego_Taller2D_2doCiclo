@@ -1043,7 +1043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 862209496617216619, guid: 8c8bfadcd6aebaa4bb315061f750b449, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.16
+      value: -6.939999
       objectReference: {fileID: 0}
     - target: {fileID: 862209496617216619, guid: 8c8bfadcd6aebaa4bb315061f750b449, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4463,7 +4463,7 @@ Transform:
   m_GameObject: {fileID: 1151128480}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: 0.07, z: 0}
+  m_LocalPosition: {x: -0.28, y: -0.04999888, z: 0}
   m_LocalScale: {x: 1.8808658, y: 2.4225638, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4925,7 +4925,7 @@ Transform:
   m_GameObject: {fileID: 1253464667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1133332, y: -3.34, z: -10}
+  m_LocalPosition: {x: -3.1611066, y: -3.34, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5604,7 +5604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.13
+      value: -11.25
       objectReference: {fileID: 0}
     - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5644,7 +5644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: distance
-      value: 3.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: obstacleMask.m_Bits
@@ -5984,7 +5984,7 @@ Transform:
   m_GameObject: {fileID: 1503555422}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.06, y: -20.53, z: 0}
+  m_LocalPosition: {x: -3.29, y: -21.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6024,7 +6024,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.30405438, y: 0.3716221}
+  m_Offset: {x: 0.27837878, y: 1.2873847}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6034,7 +6034,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.2973006, y: 4.310814}
+  m_Size: {x: 3.348652, y: 2.4792886}
   m_EdgeRadius: 0
 --- !u!1001 &1523727909
 PrefabInstance:
@@ -6070,7 +6070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.49
+      value: -9.609999
       objectReference: {fileID: 0}
     - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6110,7 +6110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: distance
-      value: 3.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: obstacleMask.m_Bits
@@ -54503,13 +54503,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867092483}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 23.66, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -0.16, y: 25.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2074537570}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!61 &1867092485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54544,17 +54544,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.16006845, y: -0.0607152}
+  m_Offset: {x: 0.17414534, y: 0.21057594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.07, y: 4.36}
+    oldSize: {x: 6, y: 5}
     newSize: {x: 3.07, y: 4.36}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.3524523, y: 3.97363}
+  m_Size: {x: 2.6243317, y: 2.4214656}
   m_EdgeRadius: 0
 --- !u!212 &1867092486
 SpriteRenderer:
@@ -54605,7 +54605,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4869448730798012059, guid: 48a1b1f53b326b8408481d5e349f170d, type: 3}
+  m_Sprite: {fileID: 5482286812579615384, guid: ca78f87186c782646884afffc2315727, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
@@ -55113,7 +55113,7 @@ Transform:
   m_GameObject: {fileID: 1955704395}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1133332, y: -3.34, z: -10}
+  m_LocalPosition: {x: -3.1611066, y: -3.34, z: -10}
   m_LocalScale: {x: 1.6402104, y: 1.6402104, z: 1.6402104}
   m_ConstrainProportionsScale: 0
   m_Children: []

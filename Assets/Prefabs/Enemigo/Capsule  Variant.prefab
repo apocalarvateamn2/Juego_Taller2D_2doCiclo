@@ -16,13 +16,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule  Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 420856264193191750, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621763623739481450, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621763623739481450, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0359
+      objectReference: {fileID: 0}
     - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6066
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.59779996
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3823450673483862740, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,15 +82,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: color
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: speed
-      value: 1.8
+      value: 2.31
       objectReference: {fileID: 0}
     - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: distance
-      value: 6
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351274868528518, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124309299098498826, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124309299098498826, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.09483914
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342825342743144420, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8476907026966402666, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
       propertyPath: m_Color.b
@@ -103,28 +135,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 420856264193191750, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4298577660220119695}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
---- !u!1 &9017935231866421124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 420856264193191750, guid: fe4f35bd162df7a43912d58295f48a5c, type: 3}
-  m_PrefabInstance: {fileID: 8714758687880319170}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4298577660220119695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9017935231866421124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a62af977fae75b45b8ddb0ebb1f6eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyShot
-  projectilePrefab: {fileID: 5389600103088625777, guid: ccedcaa4bde0fd440901d4c917cb6f3d, type: 3}
-  spawnOffset: 0.5
-  cooldown: 2
