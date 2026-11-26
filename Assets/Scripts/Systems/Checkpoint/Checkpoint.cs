@@ -1,14 +1,15 @@
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
 public class Checkpoint : MonoBehaviour
 {
-    public Light2D checkpointLight;
+    private CheckpointLightEffect lightEffect;
 
     private void Start()
     {
-        if (checkpointLight != null) 
-            checkpointLight.enabled = false;
+        lightEffect = GetComponentInChildren<CheckpointLightEffect>();
+
+        if (lightEffect != null) 
+            lightEffect.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,8 +18,8 @@ public class Checkpoint : MonoBehaviour
         {
             CheckpointManager.Instance.SaveCheckPoint(transform.position);
 
-            if (checkpointLight != null) 
-                checkpointLight.enabled = true;
+            if (lightEffect != null)
+                lightEffect.ActivatedEffect();
 
             GetComponent<Collider2D>().enabled = false;
         }

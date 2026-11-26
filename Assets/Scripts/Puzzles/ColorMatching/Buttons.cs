@@ -6,11 +6,11 @@ public class Buttons : MonoBehaviour
     [SerializeField] private EnemyColor.EmyColor requiredColor;
     [SerializeField] private GameObject bottonPressed;
     [SerializeField] private Transform centerPoint;
-
-    [HideInInspector] public bool isOnButton => objectsOnButton > 0;
     [HideInInspector] public bool isActivated;
     private int objectsOnButton = 0;
 
+    public bool isOnButton => objectsOnButton > 0 || isActivated;
+  
     private float moveSpeed;
 
     private bool CanActivate(Collider2D collision)
@@ -31,39 +31,50 @@ public class Buttons : MonoBehaviour
     {
         if(!CanActivate(collision)) return;
 
-        if (collision.TryGetComponent(out EnemyMovement enemy))
+        if (collision.CompareTag("Enemy"))
         {
-            if (centerPoint != null)
-            {
-                Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+            if (isActivated) return;
 
-                if( rb != null)
+            if (collision.TryGetComponent(out EnemyMovement enemy))
+            {
+                if (centerPoint != null)
                 {
-                    rb.linearVelocity = Vector2.zero;
-                    rb.position = centerPoint.position;
+                    Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+
+                    if (rb != null)
+                    {
+                        rb.linearVelocity = Vector2.zero;
+                        rb.position = centerPoint.position;
+                    }
                 }
+
+                enemy.FreezeAll();
             }
 
-            enemy.FreezeAll();
+            isActivated = true;
         }
 
-        if(bottonPressed != null)
-        {
-            bottonPressed.SetActive(true);
-        }
-            
-        objectsOnButton++;
-        isActivated = true;
+        CountObjects();
     }
 
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (!CanActivate(collision)) return;
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Player")) return;
 
-    //    objectsOnButton--;
-    //    objectsOnButton = Mathf.Max(0, objectsOnButton);
+        objectsOnButton = Mathf.Max(0, objectsOnButton - 1);
 
-    //    if (objectsOnButton == 0)
-    //        isActivated = false;
-    //}
+        if(objectsOnButton == 0 && !isActivated)
+        {
+            if (bottonPressed != null)
+                bottonPressed.SetActive(false);
+        }
+    }
+
+    private void CountObjects()
+    {
+        objectsOnButton++;
+
+        if (bottonPressed != null)
+            bottonPressed.SetActive(true);
+    }
 }
