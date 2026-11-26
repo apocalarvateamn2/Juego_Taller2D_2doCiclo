@@ -67,6 +67,11 @@ public class EnemyMovement : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
+    public void UnFrezzeAll()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+
     private void OnDrawGizmos()
     {
         if(player == null) return;

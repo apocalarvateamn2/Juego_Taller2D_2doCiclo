@@ -3,12 +3,11 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject enemyPrefab;
-    public float cooldownSpawn = 5f;
-
-    public float distanceRandom = 1.5f;
-    public float distanceCheck = 0.5f;
-    public int maxTry = 10;
+    [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private float cooldownSpawn = 5f;
+    [SerializeField] private float distanceRandom = 1.5f;
+    [SerializeField] float distanceCheck = 0.5f;
+    [SerializeField] int maxTry = 10;
 
     void Start()
     {

@@ -4,13 +4,16 @@ using System.Collections.Generic;
 
 public class LightTrap : MonoBehaviour
 {
+    [Header ("WinConditions")]
+    [SerializeField] private int requiredEnemies = 5;
+    [SerializeField] private GameObject objects;
+
     [Header ("Timers")]
     [SerializeField] private float timerInZone = 3;
     [SerializeField] private float timerCd = 5;
     [SerializeField] private float increaseTimer = 1.5f;
 
     [Header("Puzzle")]
-    [SerializeField] private int requiredEnemies = 5;
     [SerializeField] private Light2D zone;
     [SerializeField] private GameObject door;
 
@@ -94,7 +97,7 @@ public class LightTrap : MonoBehaviour
             requiredEnemies = 0;
             Destroy(door);
             timersUI.HideUI();
-            zone.color = Color.green;
+            objects.SetActive(false);
         }
     }
 

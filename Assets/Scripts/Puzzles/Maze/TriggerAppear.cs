@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TriggerAppear : MonoBehaviour
 {
-    public GameObject objeto;
-    public GameObject objeto2;
+    [SerializeField] GameObject objeto;
+    [SerializeField] GameObject objeto2;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

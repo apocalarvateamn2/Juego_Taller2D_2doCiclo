@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossBehaviour
   requieredEnemies: 10
+  door: {fileID: 0}
 --- !u!1 &128509149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,7 +1308,7 @@ SortingGroup:
   m_GameObject: {fileID: 1874816473}
   m_Enabled: 1
   m_SortingLayerID: -795857149
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -1400,6 +1401,7 @@ MonoBehaviour:
   lightObject: {fileID: 435401165}
   linterna: {fileID: 435401166}
   detectionArea: {fileID: 2033686515}
+  environmentLightObject: {fileID: 0}
   energy: {fileID: 1874816474}
 --- !u!114 &1874816479
 MonoBehaviour:
@@ -1414,6 +1416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   maxHealth: 0
+  invulnerabilityDuration: 1.5
+  flashInterval: 0.15
   lifebar: {fileID: 1061468594}
 --- !u!114 &1874816480
 MonoBehaviour:
@@ -1429,6 +1433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   movement: {fileID: 2214910079560339803, guid: 36b980e64c6177b4184d0c033549e90d, type: 3}
   speed: 2.65
+  acelerationSpeed: 0
+  decelerationSpeed: 0
 --- !u!212 &1874816481
 SpriteRenderer:
   serializedVersion: 2
@@ -1475,7 +1481,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -795857149
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6708612630734241175, guid: d9b2f4627a0e75846814b9cdb8a434ca, type: 3}
@@ -1756,6 +1762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96262490b20437f47adeecc3825c499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossDetection
+  spawns: {fileID: 0}
 --- !u!1 &2033686515
 GameObject:
   m_ObjectHideFlags: 0
