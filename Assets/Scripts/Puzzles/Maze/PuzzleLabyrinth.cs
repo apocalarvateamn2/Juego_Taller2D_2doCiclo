@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PuzzleLabyrinth : MonoBehaviour
 {
-    public GameObject[] partesLaberinto;
+    [SerializeField] GameObject[] partesLaberinto;
+    [SerializeField] GameObject guide;
     private int fase = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,6 +14,9 @@ public class PuzzleLabyrinth : MonoBehaviour
             {
                 partesLaberinto[fase].SetActive(true);
                 fase++;
+
+                if (fase == 1)
+                    guide.SetActive(false);
             }
             Destroy(collision.gameObject);
         }
